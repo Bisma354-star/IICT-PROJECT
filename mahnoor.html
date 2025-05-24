@@ -1,0 +1,46 @@
+<html>
+<style>
+  .clickable-img {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .img-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .img-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid white;
+    border-radius: 10px;
+  }
+
+  /* Show popup when targeted */
+  .img-popup:target {
+    display: flex;
+  }
+</style>
+<body>
+<!-- Small Image with Link -->
+<a href="#img1">
+  <img src="your-image.jpg" alt="Sample" class="clickable-img">
+</a>
+<!-- Enlarged Image in Fullscreen Modal -->
+<div id="img1" class="img-popup">
+  <a href="#">
+    <img src="your-image.jpg" alt="Enlarged">
+  </a>
+</div>
+</body>
+</html>
