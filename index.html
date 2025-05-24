@@ -1,0 +1,652 @@
+<html><title>Cheezious</title>
+    <head>
+        <style>
+         #img1{
+          width:50px;
+          height:50px;
+         }
+         #img2{
+            width:150px;
+            height:150px;
+            border:solid #FFD700;
+            padding:6px;
+            border-radius: 6px;
+         }
+         #img6{
+            width: 250px;
+            height:250px;
+            gap:20px;
+            border:solid #FFD700;
+            padding:10px;
+            margin:15px;
+            border-radius: 6px;
+         }
+         #img7{
+            width: 606px;
+            height:890px;
+         }
+
+         #img3{
+            width:1300px;
+            height:416px;
+         }
+         #img4{
+            width:110px;
+            height:45px;
+         }
+         #img5{
+            width:1300px;
+            height:516px;
+            background: none;
+         }
+        #colorbg{
+            background-color:#FFD700;
+        }
+         #h1{
+            color:saddlebrown;
+            font-family: 'Baloo Bhai 2';
+         }
+         #p{
+            color:saddlebrown;
+            font-family:'Baloo Bhai 2' ;
+            margin:20px;
+         }
+         #price{
+            color:orangered;
+            font-family:'Baloo Bhai 2' ;
+            font-weight: bold;
+            text-align: left;
+            font-size:25pt;
+            margin:20px;
+         }
+
+         .page{
+                    display:none;
+                }
+                #menu{
+                    text-align: center;
+                }
+                #home{
+                    text-align: center;
+                }
+                #orders{
+                    text-align: center;
+                }
+                #aboutus{
+                    text-align: center;
+                }
+                #home:target, #menu:target, #orders:target,#aboutus:target {
+                    display:block ;
+                }
+                .link { 
+                    background-color:#FFD700;
+                    border:2px solid;
+                    border-radius:6px ;
+                    padding:5px;
+                    text-align: center;
+                    font-size: 15pt;
+                    color:saddlebrown;
+                    text-decoration: none;
+                }
+                .link a{
+                    font-size: 20pt;
+                    color:saddlebrown;
+                    text-decoration: none;
+                    font-weight: bold;
+                    border-radius: 6px;
+                    padding:2px;
+                }
+                #menuu{
+                    font-size: 12pt;
+                    font-family: sans-serif;
+                    border:solid #FFD700;
+                    padding:6px;
+                    border-radius: 6px;
+                }
+        .container {
+            display: flex;
+        }
+
+        .one-column {
+            width: 200px;
+            margin:15px;
+            padding:40px;
+            
+            font-family: serif;
+        }
+        
+        .two-column {
+            width: 200px;
+            margin:15px;
+            padding: 40px;
+        
+            font-family: serif;
+        }
+        .left-column {
+            width: 200px;
+            margin:15px;
+            padding: 20px;
+           
+            font-family: serif;
+        }
+        .middle1-column {
+            width: 200px;
+            margin:15px;
+            padding: 20px;
+            
+            font-family: serif;
+        }
+        .column1 {
+            width: 500px;
+            margin:5px;
+            padding: 20px;
+           
+            font-family: serif;
+        }
+        .column2 {
+            width: 500px;
+            margin:5px;
+            padding: 20px;
+            
+            font-family: serif;
+        }
+        li{
+            color: saddlebrown;
+        }
+        ul{
+            color: saddlebrown;
+            align-items: center;
+        }
+        ol{
+            color: saddlebrown;
+            align-items: left;
+        }
+        .table{
+            border: 2px solid saddlebrown;
+            border-radius: 2px;
+            
+        }
+        td,th{
+            border: 2px solid saddlebrown;
+            border-radius: 2px;
+            color:saddlebrown;
+            font-weight: bold;
+        }
+        label{
+            color:saddlebrown;
+            font-size: 17pt;
+            font-weight: bold;
+        }
+        input{
+            color:saddlebrown;
+            font-size: 17pt;
+        }
+        input[type="radio"]:checked+span{
+              color:saddlebrown;
+            font-size: 17pt;
+        }
+        option{
+             color:saddlebrown;
+            font-size: 10pt;
+            
+        }
+       
+        select{
+            color:saddlebrown;
+            font-size: 15pt;
+            font-family: Georgia;
+        }
+          label {
+      color: saddlebrown;
+      font-size: 17pt;
+      font-weight: bold;
+    }
+
+    input[type="radio"] {
+      margin: 10px;
+    }
+
+    #confirm-box {
+      display: none;
+    }
+
+    #confirm-box:checked ~ #message {
+      display: block;
+      color: saddlebrown;
+      font-size: 20pt;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    #message {
+      display: none;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: saddlebrown;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14pt;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    .item:hover {
+      color:white; 
+    }
+    .bg{
+      background: linear-gradient(to left,rgb(246, 202, 5),#D5C1A3,#F2A65A);
+    }
+    
+        </style>
+    </head>
+    <body class="bg"  >
+        <div>
+        <p>
+            <img id="img1" src="cheezious logo.jpg" align="left"><h1 id="h1">cheezious</h1>
+           
+            <h1 id="h1" align="center"><marquee class="item">WELCOME TO CHEEZIOUS!</marquee></h1>
+        </p>
+        </div>
+        <div class="link">
+            <a href="#home" class="item"  > home |</a>
+            <a href="#orders"class="item">orders |</a>
+            <a href="#menu" class="item">menu |</a>
+            <a href="#aboutus" class="item">about us </a>
+        </div>
+        <div id="home" class="page" class="bg">
+           
+            <br>
+            <img id="img3" src="cheezious main.PNG">
+            <h1 id="h1">Hot Items</h1>
+            <img id="img2" src="pizza.jpg" >
+            <img id="img2" src="cheezious 1.webp">
+            <img id="img2" src="cheezious 3.webp">
+            <img id="img2" src="Behari-Rolls.png">
+            <img id="img2" src="calzone chunks.PNG">
+            <img id="img2" src="Behari-Kebab.jpeg">
+            <img id="img2" src="burgeeeeer.PNG">
+            <p><pre id="p">cheezious special                  Crown Crust & pasta                                  pizaa staker                 bihari rolls                  calzone chunks                 bihari kebab pizza                    burger     </pre> </p>
+            <br>
+           
+            <p style="color:saddlebrown;">Cheezious Copyright © 2025. All Rights Reserved.<br><br>TERMS & CONDITIONS| PRIVACY POLICY</p>
+        </div>
+        <div id="orders" class="page">
+            <br>
+            <img id="img7" align="right" src="order.PNG">
+            <div align="left">
+            <form>
+                <label>Your Name:</label>
+                <table><tr><td><input type="text"></td></tr></table>
+                <label>Contact No:</label>
+                <table><tr><td><input type="text"></td></tr></table>
+            </form>
+            </div>
+<div align="left">
+<form>
+    
+<label>Select your main order:</label><br>
+<table>
+<tr>
+    <td color="saddlebrown"><input type="radio"  >Zalmi meal deal </td>
+    <td><input type="radio">peri peri pizza<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  >chicken tikka pizza </td>
+    <td><input type="radio">chicken fajita pizza<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  > crown crust pizza</td>
+    <td><input type="radio">cheese lover pizza<br></td>
+</tr>
+<tr>
+    <td><input type="radio" >stuff crust pizza </td>
+    <td><input type="radio">behari kebab pizza<br></td>
+</tr>
+<tr>
+    <td><input type="radio" > chicken pepperoni pizza</td>
+    <td><input type="radio">cheezious special pizza<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  >crunchy chicken pasta</td>
+    <td><input type="radio">fettucine alfredo pasta<br></td>
+</tr>
+<tr>
+    <td><input type="radio" >behari rolls </td>
+    <td><input type="radio">arabic rolls<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  >calzone chunks </td>
+    <td><input type="radio">pizza stacker<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  > mexican Sandwich</td>
+    <td> <input type="radio" >euro sandwich<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  > reggy burger</td>
+    <td><input type="radio">bazinga burger<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  >regular pizza deal</td>
+    <td><input type="radio">somewhat amazing 1 <br></td>
+</tr>
+<tr>
+    <td><input type="radio" > somewhat amazing 2</td>
+    <td><input type="radio">special deal<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  >chicken piece </td>
+    <td><input type="radio">fries<br></td>
+</tr>
+<tr>
+    <td><input type="radio"  >soft drink<br></td>
+</tr>
+
+</table>
+</select>
+</form>
+</div>
+  <div align="left">
+            <form>
+                <label>Your Address:</label>
+                <table><tr><td><input type="text"></td></tr></table>
+                <label>Email:</label>
+                <table><tr><td><input type="text"></td></tr></table>
+            </form>
+            </div>
+ <input type="checkbox" id="confirm-box">
+  <label for="confirm-box" class="button">Confirm</label>
+  <div id="message">Your order has been confirmed!</div>
+        </div>
+        <div id="menu" class="page">
+            
+            <P id="colorbg">
+            <h1 id="h1">Zalmi Meal</h1>
+            <img id="img6" src="cheezious 1.webp" align="left"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p id="p" align="left" ><b>Zalmi Meal Deal</b><br>1 Regular Crown Crust Pizza<br>1 Fettuccine Alfredo Pasta<br>1 Liter Cold Drink  </p>
+            <p id="price" >Rs.2500</p>
+            <div style="clear: both;"></div>
+            <h1 id="h1">PIZZAS</h1>
+        <img id="img6" src="peri peri pizza.PNG"  align="left">
+      <img id="img6" src="tikka pizza.PNG"  align="left">
+        <img id="img6" src="fajita pizza.PNG"  align="left"><br>
+       <img id="img6" src="crown crust.PNG"  align="left">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="container">
+<div class="one-column">
+    <p id="p" align="left" ><b>Peri Peri Pizza</b><br>A bold, tangy, and spicy delight<br>infused with our special<br>Cheezious sauce</p>
+    <p id="price" >Rs.1600</p>
+</div>
+<div class="two-column">
+    <p id="p" align="left" ><b>Chicken Tikka</b><br>Tender chunks of Marinated<br>Grilled Chicken with Savory Onion.</p>
+    <p id="price">Rs. 690 </p>
+</div>
+<div class="left-column">
+    <br>
+    <p id="p" align="left" ><b>Chicken Fajita</b><br>An authentic taste of fajita marinated<br>Chicken, Onion and Bell Peppers.</p>
+    <p id="price" >Rs.690</p>
+</div>
+<div class="middle1-column">
+    <p id="p" align="left" ><b>Crown Crust</b><br>Scrumptious Pizza with a yummy blend<br>of Grilled Chicken, Olives, Onion, Capsicum.</p>
+    <p id="price" >Rs.1550</p>
+</div>
+</div>
+          <div style="clear: both;"></div>
+          <img id="img6" src="cheese pizza.PNG"  align="left">
+          <img id="img6" src="stuffed pizza.PNG"  align="left">
+          <img id="img6" src="kebab pizza.PNG"  align="left">
+          <img id="img6" src="pepperoni pizza.PNG"  align="left">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container">
+            <div class="one-column">
+                <p id="p" align="left" ><b>Cheese Lover Pizza</b><br>
+                    Yummiest Blend of<br>Cheese and Pizza Sauce</p>
+                <p id="price" >Rs.690</p>
+            </div>
+            <div class="two-column">
+                <p id="p" align="left" ><b>Stuff Crust Pizza</b> <br>
+                    Special Chicken, Green Olives,<br> Mushrooms, with the Crust filled with Cheese</p>
+                <p id="price" >Rs.1600</p>
+            </div>
+            <div class="left-column">
+                <p id="p" align="left" ><b>Behari Kebab</b><br>
+                    Enjoy Special Chicken Behari Kabab,<br>Grilled Chicken with Onion and Jalapenos</p>
+                <p id="price" >Rs.1550</p>
+            </div>
+            <div class="middle1-column">
+                <p id="p" align="left" ><b>Chicken Pepperoni pizza</b><br>
+                    Chicken Pepperoni,<br>Pizza Sauce and Cheese.</p>
+                <p id="price" >Rs.690</p>
+            </div>
+            </div>
+
+
+          <div style="clear: both;"></div> <br>
+          <img id="img6" src="special pizza.PNG"  align="left">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <p id="p" align="left" ><b>Cheezious Special pizza</b><br>
+            Delicious Special Chicken<br>with Black Olives, Sausages and<br>Bell Pepper.</p>
+          <p id="price" >Rs.1600</p>
+          <div style="clear: both;"></div>
+          <h1 id="h1">Pastas</h1>
+          <img id="img6" src="pasta.PNG"  align="left">
+          <img id="img6" src="Capture.PNG"  align="left">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container">
+            <div class="one-column">
+                <p id="p" align="left" ><b>Crunchy Chicken pasta</b><br>
+                    Yummiest Macaroni Pasta in<br>White Sauce topped with Crispy Chicken and Cheese.</p>
+                <p id="price" >Rs.950</p>
+            </div>
+            <div class="two-column">
+                <p id="p" align="left" ><b>Fettuccine Alfredo pasta</b><br>
+                    Pasta made in the yummiest White Sauce<br>With Chicken Chunks Topped with Cheese</p>
+                <p id="price" >Rs.1050</p>
+            </div>
+            </div>
+            <h1 id="h1">Special</h1>
+            <img id="img6" src="Behari-Rolls.png"  align="left">
+            <img id="img6" src="arabic rolls.PNG"  align="left">
+            <img id="img6" src="calzone chunks.PNG"  align="left">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="container">
+              <div class="one-column">
+                  <p id="p" align="left" ><b>Behari Rolls</b><br>
+                    4 pcs Behari Rolls stuffed<br>with the yummiest mix served with sauce</p>
+                  <p id="price" >Rs.690</p>
+              </div>
+              <div class="two-column">
+                  <p id="p" align="left" ><b>Arabic Rolls</b><br>
+                    4 pcs Arabic Rolls stuffed with<br>the yummiest mix served with sauce.</p>
+                  <p id="price" >Rs.690</p>
+              </div>
+              <div class="left-column">
+                <p id="p" align="left" ><b>Calzone Chunks</b><br>
+                    4 pcs Stuffed Calzone Chunks<br>served with Sauce & Fries.</p>
+                <p id="price" >Rs.1150</p>
+            </div>
+              </div>
+          <div style="clear: both;"></div> 
+          <h1 id="h1">Sandwiches</h1>
+          <img id="img6" src="stacker.PNG"  align="left">
+          <img id="img6" src="mexican.PNG"  align="left">
+          <img id="img6" src="euro.PNG"  align="left">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container">
+            <div class="one-column">
+                <p id="p" align="left" ><b>Pizza Stacker</b><br>
+                    A unique blend of Delicious Sauce,<br>Crispy Chicken and Pizza Crust.</p>
+                <p id="price" >Rs.920</p>
+            </div>
+            <div class="two-column">
+                <p id="p" align="left" ><b>Mexican Sandwich</b><br>
+                    Mozzarella Dipped Chicken Topped with<br>Garlic Sauce and Tomatoes Served in Baked</p>
+                <p id="price" >Rs.920</p>
+            </div>
+            <div class="left-column">
+                <p id="p" align="left" ><b>Euro Sandwich</b><br>
+                    Mozzarella Dipped Black Pepper Chicken<br>topped with Garlic Sauce, Pineapples</p>
+                <p id="price" >Rs.920</p>
+            </div>
+            </div>
+          <div style="clear: both;"></div> 
+          <h1 id="h1">Burgers</h1>
+          <img id="img6" src="raggy burgeer.PNG"  align="left">
+          <img id="img6" src="zinger.PNG"  align="left">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container">
+            <div class="one-column">
+                <p id="p" align="left" ><b>Reggy Burger</b><br>
+                    Perfectly Fried Chicken Patty with<br>Fresh Lettuce and Sauce in a Sesame Seed Bun</p>
+                <p id="price" >Rs.390</p>
+            </div>
+            <div class="two-column">
+                <p id="p" align="left" ><b>Bazinga Burger</b><br>
+                    Crispy fried to perfection boneless<br>thigh with signature sauce and lettuce</p>
+                <p id="price" >Rs.560</p>
+            </div>
+            </div>
+          <div style="clear: both;"></div>
+          <h1 id="h1">Hot Deals</h1>
+          <img id="img6" src="pizza deal.PNG"  align="left">
+          <img id="img6" src="burger deal.PNG"  align="left">
+          <img id="img6" src="burger deal 2.PNG"  align="left">
+          <img id="img6" src="platter.PNG"  align="left">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container">
+            <div class="one-column">
+                <p id="p" align="left" ><b>Regular Pizza Deal</b><br>
+                    1 Regular Pizza<br>and 2 Regular Drinks.</p>
+                <p id="price" >Rs.1450</p>
+            </div>
+            <div class="two-column">
+                <p id="p" align="left" ><b>Somewhat Amazing</b> <br>
+                    2 Bazinga, Regular Fries,<br>2 Regular Drinks</p>
+                <p id="price" >Rs.1250</p>
+            </div>
+            <div class="left-column"><br>
+                <p id="p" align="left" ><b>Somewhat Amazing</b> <br>
+                    2 Bazinga Burger,<br>2 pcs Chicken<br>Large Fries, 2 Regular Drink</p>
+                <p id="price" >Rs.1750</p>
+            </div>
+            <div class="middle1-column"><br>
+                <p id="p" align="left" ><B>Special Deal</B><br>
+                    4 pcs Behari Rolls,<br>6 pcs Wings Served<br>with Fries & Sauce.</p>
+                <p id="price" >Rs.1600</p>
+            </div>
+            </div>
+          <h1 id="h1">Side Order</h1>
+          <img id="img6" src="chicken.PNG"  align="left">
+          <img id="img6" src="fries.PNG"  align="left">
+          <img id="img6" src="drink2.PNG"  align="left">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container">
+            <div class="one-column">
+                <p id="p" align="left" ><b>Chicken Piece</b><br>
+                    Crispy Chicken</p>
+                <p id="price" >Rs300</p>
+            </div>
+            <div class="two-column">
+                <p id="p" align="left" ><b>Fries</b></p>
+                <p id="price" >Rs220</p>
+            </div>
+            <div class="left-column"><br>
+                <p id="p" align="left" ><b>Soft Drink</b></p>
+                <p id="price" >Rs.100</p>
+            </div>
+            </div>
+           
+        </div>
+        <div id="aboutus" class="page">
+            <hr>
+            <h1 style=color:saddlebrown;>About Us</h1>
+            <hr>
+            <h3 style=color:saddlebrown;>Welcome to Cheezious – your go-to destination for cheesy indulgence!<br> We're a proudly Pakistani fast-food brand known for our creative menu, generous portions, and unforgettable flavors.</h3>
+<ul  type="circle" style=color:saddlebrown;>
+    <Li>
+        <h3 style=color:saddlebrown;text-align:left;>What Makes Us Special?<br>we stand out because of our:</h3>
+            <ol>
+                <Li align="left">Signature cheesy recipes</Li>
+                <Li align="left">Innovative pizza crusts and flavors</Li>
+                <Li align="left">Variety of sides and add-ons</Li>
+                <Li align="left">Fast delivery and cozy dine-in experience</Li>
+                <Li align="left">Dedication to quality and hygiene</Li>
+
+            </ol>
+    </Li>
+    <hr>
+    <Li>
+        <h3 style=color:saddlebrown;text-align:left;>Our Journey:</h3>
+        <ol>
+            <Li align="left"><b>Launched:</b>
+            Opened our first outlet with a vision to bring unique, cheese-loaded fast food to Pakistan.</Li>
+            <Li align="left"><b>Expansion:</b>
+            Quickly gained popularity and opened multiple branches across major cities. </Li>
+            <Li align="left"><B>Innovation:</B>
+            Continuously updated our menu to offer something new and exciting.</Li>
+            <Li align="left"><b>Community:</b>
+            Built a loyal customer base and a team that shares our passion.</Li>
+            <Li align="left"><b>Sustainability:</b>
+            Committed to maintaining food quality, safety, and customer satisfaction.</Li>
+        </ol>
+    </Li>
+    <hr>
+    <li>
+        <h3 style=color:saddlebrown;text-align:left;>Our Menu Highlights:<br>
+            Here's a quick look at what we offer:
+          </h3>
+        <table class="table" style="background-color: #FFD700;color: saddlebrown;">
+          <tr>
+            <th>Category</th>
+            <th>Popular Items</th>
+            <th>Cheeziness Level</th>
+          </tr>
+          <tr>
+            <td>pizzas</td>
+            <td>Crown Crust, Chicken Tikka, Cheezious Special</td>
+            <td>🔥🔥🔥</td>
+          </tr>
+          <tr>
+            <td>Sandwiches</td>
+            <td>Stuffed Sandwich, Crunchy Chicken</td>
+            <td>🔥🔥</td>
+          </tr>
+          <tr>
+            <td>Pastas</td>
+            <td>Creamy Pasta, Chicken Lasagna</td>
+            <td>🔥🔥🔥</td>
+          </tr>
+          <tr>
+            <td>Appetizers & side</td>
+            <td>Cheesy Sticks, Loaded Fries</td>
+            <td>🔥🔥🔥</td>
+          </tr>
+          <tr>
+            <td>Beverages & more</td>
+            <td>Soft Drinks,fries</td>
+            <td>🔥</td>
+          </tr>
+        </table>
+    </li>
+    <hr>
+    <li>
+        <h3 style=color:saddlebrown;text-align:left;>Our Promise to you:<br>
+          We promise to:
+        </h3>
+          <ol>
+           <li align="left">Serve fresh, quality meals every time</li>
+           <li align="left">Keep innovating to surprise your taste buds</li>
+           <li align="left">Listen to your feedback and grow together</li>
+           <li align="left">Provide a warm, welcoming experience — whether you're dining in or ordering from home</li>
+          </ol>
+      </li>
+<hr>
+</ul>
+<br>
+<p style="color:saddlebrown;">Copyright © 2025. All Rights Reserved.<br><br>TERMS & CONDITIONS| PRIVACY POLICY</p>
+   </div>
+</body>
+</html>
